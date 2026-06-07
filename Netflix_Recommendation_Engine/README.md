@@ -69,7 +69,7 @@ To build a **personalized movie recommendation engine** for Netflix users using 
 
 ### 📁 **Dataset Description:**
 
-* The dataset `netflix.csv` contains **user IDs**, **movie IDs**, and **ratings**.
+* The dataset `netflix.csv` contains **Cust_IDs**, **Movie_IDs**, and **ratings**.
 * Each row represents a user's rating for a movie.
 * Additional metadata like movie titles can be integrated using a separate file (e.g., `movies.csv`).
 
@@ -99,7 +99,7 @@ To build a **personalized movie recommendation engine** for Netflix users using 
 
 #### 4. **Predictions & Recommendation Generation:**
 
-* Used `algo.predict(user_id, movie_id)` to predict ratings for a user–movie pair.
+* Used `algo.predict(cust_id, movie_id)` to predict ratings for a user–movie pair.
 * Built a function to generate **Top-N recommendations** for each user using predictions on the **anti-testset** (all unseen movies by the user).
 * Sorted predictions by estimated rating to suggest the most relevant movies.
 
